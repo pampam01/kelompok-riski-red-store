@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Redstore | Ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Produk</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="account.html">Akun</a></li>
+
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onClick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Beri Gaya Baru pada Latihan Anda!</h1>
+                    <p>Kesuksesan tidak selalu tentang kehebatan. Ini tentang konsistensi. Kerja keras yang konsisten
+                        mendapatkan kesuksesan. Kehebatan akan datang.</p>
+                    <a href="products.html" class="btn">Jelajahi Sekarang &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ featured categories------------------------------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3 (2).jpg">
+                </div>
+            </div>
+        </div>
+        <!------------------------------ featured Products------------------------------>
+        <div class="small-container">
+            <h2 class="title">Produk Unggulan</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="./cards/downshifter.html"><img src="images/product-11.jpg"></a>
+                    <a href="./cards/downshifter.html">
+                        <h4>Sepatu Olahraga Downshifter</h4>
+                    </a>
+                    <div class="rating">
+                        <!--(sebelum ini menambahkan tautan font awesome4 cdn ke head) menambahkan tautan cdn dengan mencari ikon font awesome4 dan dari situs tersebut mencari bintang memasukkan opsi pertama dan mendapatkan tautan ini fa-star*-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 500.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/race-up.html"><img src="./images/product-2.jpg"></a>
+                    <h4>Sepatu Lari Lace-Up</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rp 350.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/lace-fastening.html"><img src="images/product-3.jpg"></a>
+                    <h4>Sepatu Lace Fastening</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 150.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/flat-lace-fastening.html"><img src="images/product-10.jpg"></a>
+                    <h4>Sepatu Flat Lace-Fastening</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 480.000</p>
+                </div>
+            </div>
+
+
+            <h2 class="title">Produk Terbaru</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="./cards/datar-abu-abu.html"><img src="images/product-5.jpg"></a>
+                    <h4>Sepatu Hak Datar Abu-abu</h4>
+                    <div class="rating">
+                        <!--(sebelum ini menambahkan tautan font awesome4 cdn ke head) menambahkan tautan cdn dengan mencari ikon font awesome4 dan dari situs tersebut mencari bintang memasukkan opsi pertama dan mendapatkan tautan ini fa-star*-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 500.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/lace-fastening.html"><img src="images/product-3.jpg"></a>
+                    <h4>Sepatu Hitam Lace-Fastening</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rp 150.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/kaos-kaki.html"><img src="images/product-7.jpg"></a>
+                    <h4>Kaos Kaki HRX</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 90.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/race-up.html"><img src="images/product-2.jpg"></a>
+                    <h4>Sepatu Lari Race-Up</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 150.000</p>
+                </div>
+            </div>
+            <!--baris baru untuk produk terbaru-->
+            <div class="row">
+                <div class="col-4">
+                    <a href="./cards/kaos-kaki.html"><img src="images/product-7.jpg"></a>
+                    <h4>Kaos Kaki HRX</h4>
+                    <div class="rating">
+                        <!--(sebelum ini menambahkan tautan font awesome4 cdn ke head) menambahkan tautan cdn dengan mencari ikon font awesome4 dan dari situs tersebut mencari bintang memasukkan opsi pertama dan mendapatkan tautan ini fa-star*-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 90.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/flat-lace-fastening.html"><img src="images/product-10.jpg"></a>
+                    <h4>Sepatu Flat Lace-Fastening</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rp 480.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="./cards/datar-abu-abu.html"><img src="images/product-11.jpg"></a>
+                    <h4>Pantofel Pria (Abu-abu)</h4>
+                    <div class="rating">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 150.000</p>
+                </div>
+                <div class="col-4">
+                    <a href="products-details.html"><img src="images/product-12.jpg"></a>
+                    <h4>Sepatu Putih Lace-Fastening</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rp 210.000</p>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------`   offer   --------------------------------->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/image1.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exklusif Tersedia di RedStore</p>
+                        <h1>Sepatu Olahraga</h1>
+                        <small> Beli koleksi terbaru sepatu olahraga secara online di Redstore dengan harga terbaik dari
+                            merek-merek terkemuka seperti Adidas, Nike, Puma, Asics, dan Sparx dengan santai dan harga
+                            terbaik. </small><br>
+                        <a href="products.html" class="btn">Beli Sekarang &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!------------------------------Testimonial---------------------------------->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+
+                        <p>Red Store adalah toko online terbaik untuk koleksi sepatu olahraga terbaru. Dapatkan harga
+                            terbaik dari merek-merek terkemuka seperti Adidas, Nike, Puma, Asics, dan Sparx. Temukan
+                            gaya dan kenyamanan dalam satu tempat!</p>
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-1.png">
+                        <h3>Sean Parkar</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+
+                        <p>Temukan gaya dan kenyamanan dalam satu tempat di Red Store! Dapatkan koleksi sepatu olahraga
+                            terbaru dengan harga terbaik dari merek-merek terkemuka seperti Adidas, Nike, Puma, Asics,
+                            dan Sparx. Belanja sekarang dan nikmati pengalaman berbelanja yang menyenangkan.</p>
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-2.png">
+                        <h3>Mike Smith</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+
+                        <p>Red Store adalah toko online yang luar biasa untuk koleksi sepatu olahraga terbaru. Dapatkan
+                            harga
+                            terbaik dari merek-merek terkemuka seperti Adidas, Nike, Puma, Asics, dan Sparx. Temukan
+                            gaya dan kenyamanan dalam satu tempat!</p>
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-3.png">
+                        <h3>Mabel Joe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------------Brands------------------------------------>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------------------footer------------------------------------->
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Unduh Aplikasi Kami</h3>
+                        <p>Unduh aplikasi untuk ponsel Android dan iOS.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>Tujuan Kami Adalah Untuk Secara Berkelanjutan Membuat Kenikmatan dan Manfaat Olahraga Dapat
+                            Diakses oleh Banyak Orang.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Tautan Berguna</h3>
+                        <ul>
+                            <li>Kupon</li>
+                            <li>Postingan Blog</li>
+                            <li>Kebijakan Pengembalian</li>
+                            <li>Bergabung dengan Afiliasi</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Ikuti kami</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr><!--garis horizontal-->
+                <p class="copyright">Hak Cipta 2024 </p>
+
+            </div>
+        </div>
+
+
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+        <script>
+            var menuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+</body>
+
+</html>
